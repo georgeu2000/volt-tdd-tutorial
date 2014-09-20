@@ -27,4 +27,6 @@ group :development do
   gem 'poltergeist', '~> 1.5.0'
   gem 'listen', '~> 2.7.0'
   gem 'launchy'
+  gem 'guard', '2.0.1'
+  gem 'guard-rspec', '~> 1.2.0'
 end

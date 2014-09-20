@@ -5,7 +5,7 @@ if ENV['IN_BROWSER']
     it "should load the page" do
       visit '/'
 
-      save_and_open_page
+      # save_and_open_page
 
       expect(page).to have_content('Home')
     end
