@@ -1,0 +1,1 @@
+require './lib/models/test_model'
