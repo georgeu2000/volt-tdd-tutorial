@@ -1,15 +1,14 @@
-ENV['SERVER'] = 'true'
-
 if ENV['IN_BROWSER'] && RUBY_PLATFORM != 'opal'
   require 'capybara/rspec'
   require 'chromedriver2/helper'
   require 'capybara/poltergeist'
 
-  require 'volt'
+  require 'bundler/setup'
   require 'volt/server'
 
-  app_path = File.expand_path(File.join(File.dirname(__FILE__), ".."))
-  Capybara.app = Server.new(app_path).app
+  require './app/init'
+
+  Capybara.app = Server.new.app
 
   Capybara.default_driver = :poltergeist
 end
@@ -26,4 +25,3 @@ if RUBY_PLATFORM != 'opal'
 end
 
 
-require './app/init'

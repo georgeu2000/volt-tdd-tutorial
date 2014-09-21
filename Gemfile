@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'volt', '0.7.18'
+# gem 'volt', git:'https://github.com/georgeu2000/volt', branch:'wrong-mime-type'
+gem 'volt', '0.7.19'
 
 
 # The following gem's are optional for themeing
